@@ -1,22 +1,59 @@
-.template {
+@import url(http://fonts.googleapis.com/css?family=Chango);
+
+.tempp {
 	display: none; 
 }
 
-.name {
-	font-weight: bold; 
+.tempd {
+	display: none; 
 }
+
+.tempds {
+	display: none;
+}
+
+.pizza .name {
+	font-weight: bold; 
+	float: left;
+	color: #52197E; 
+}
+
+.pic {
+	float: left; 
+	padding-left: 5px; 
+}
+
+.item {
+	clear: both;
+}
+
+.drink .price {
+	display: inline; 
+}
+
+.dessert .price {
+	display: inline; 
+}
+
+
+
 
 h1 {
 	color: #52197E;
 	font-weight: bold; 
+	font-family: 'Chango';
+	font-size: 500%;  
 }
 
 h2 {
 	color: #52197E;
+	font-family: 'Chango';
+	font-size: 300%;  
 }
 
 h3 {
-	color: #FBC70E;
+	color: #52197E;
+	font-family: 'Chango'; 
 }
 
 .logo {

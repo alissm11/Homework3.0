@@ -37,8 +37,6 @@
                 </div>
             </nav>
 
-            <h1 class="text-center">Dawg Pizza</h1>
-
             <div id="dawg-pizza-carousel" class="carousel slide">
                 <!-- slide indicators -->
                 <ol class="carousel-indicators">
@@ -83,8 +81,8 @@
 
             
             <div class="menu">
-                <h1 class="text-center">Dawg Pizza Menu</h1>
-                <h2>Pizzas</h2>
+                <h2 class="text-center">Dawg Pizza Menu</h2>
+                <h3>Pizzas</h3>
                 <p>All our pizzas are made with hand-thrown thin crust, baked in real wood ovens. Choose from one of these sizes: </p>
                 <ul>
                     <li>Small (12")</li>
@@ -95,23 +93,46 @@
                 <!-- template card for each entry 
                 this will not be displayed, only used by code -->
                 <div class="pizza">
-                    <div class="template">
+                    <div class="tempp">
                         <dl>
-                            
                             <dt class="name"></dt>
                             <img class="pic" src="" alt=""/>
-                            <dd class="description"><strong> (<span class="price sm"></span>/<span class="price md"></span>/<span class="price lg"></span>)</strong></dd>
-                             
+                                <dd class="item">
+                                    <span class="description"></span>
+                                    <strong>
+                                        (<span class="price sm"></span>/<span class="price md"></span>/<span class="price lg"></span>)
+                                    </strong>
+                                </dd>
                         </dl>
                     </div>
                 </div>
-                <div class="template drink">
 
+                <p></p>
+                <p><img src="img/carrot.png" alt="vegetarian icon"> = Vegetarian</p>
+
+                <h3>Drinks</h3>
+                <div class="drink">
+                    <div class="tempd">
+                        <ul>
+                            <li class="item">
+                                <span class="name"></span>
+                                <strong>(<span class="price"></span>)</strong>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="template dessert">
-
-                </div>
+                <h3>Desserts</h3>
+                <div class="dessert">
+                    <div class="tempds">
+                        <ul>
+                            <li class="item">
+                                <span class="name"></span>
+                                <strong>(<span class="price"></span>)</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
             </div> <!-- .menu --> 
 
         
@@ -124,7 +145,11 @@
         <!-- hot links to Bootstrap JavaScript and jQuery (required by Bootstrap) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        
+        <!-- direct link to menu script -->
         <script src="http://www.dawgpizza.com/orders/menu.js"></script>
+
+        <!-- my own JavaScript file, which will use the menu data structure -->
         <script src="js/menu-items.js"></script>
 
         <!-- auto-play the carousel -->

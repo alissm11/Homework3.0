@@ -1,10 +1,15 @@
 
 
 $(function(){
-	
+	renderPizza();
+	renderDrink(); 
+	renderDessert(); 
+});
+
+function renderPizza() {
 	var idx;
 	var pizza;
-	var template = $('.template');
+	var template = $('.tempp');
 	var clonedTemplate;
 	var container = $('.pizza');
 
@@ -23,30 +28,45 @@ $(function(){
         clonedTemplate.find('.sm').html(pizza.prices[0]); 
         clonedTemplate.find('.md').html(pizza.prices[1]);
         clonedTemplate.find('.lg').html(pizza.prices[2]); 
-        clonedTemplate.removeClass('template');
+        clonedTemplate.removeClass('tempp');
         container.append(clonedTemplate);
     } //for each pizza
-	
-	/*var drink;
-	var container = $('.menu drink');
+}
+
+function renderDrink() {
+	var idx; 
+	var drink;
+	var template = $('.tempd');
+	var clonedTemplate;
+	var container = $('.drink');
 	for (idx = 0; idx < com.dawgpizza.menu.drinks.length; ++idx) {
 	    drink = com.dawgpizza.menu.drinks[idx];
 
 	    clonedTemplate = template.clone();
-        clonedTemplate.find('.name').html(pizza.name);
-        clonedTemplate.find('.price').html(pizza.price);
+        clonedTemplate.find('.name').html(drink.name);
+        clonedTemplate.find('.price').html(drink.price);
         
-        clonedTemplate.removeClass('template');
+        clonedTemplate.removeClass('tempd');
         container.append(clonedTemplate);
 
 	} //for each drink
+}
 
+function renderDessert() {
+	var idx; 
 	var dessert;
+	var template = $('.tempds');
+	var clonedTemplate;
+	var container = $('.dessert');
 	for (idx = 0; idx < com.dawgpizza.menu.desserts.length; ++idx) {
-	    drink = com.dawgpizza.menu.desserts[idx];
+	    dessert = com.dawgpizza.menu.desserts[idx];
 
-	    //drink.name = name of drink
-	    //drink.price = price of drink
+	    clonedTemplate = template.clone();
+        clonedTemplate.find('.name').html(dessert.name);
+        clonedTemplate.find('.price').html(dessert.price);
+        
+        clonedTemplate.removeClass('tempds');
+        container.append(clonedTemplate);
 
-	} //for each drink*/
-});
+	} //for each dessert
+}
